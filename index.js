@@ -9,8 +9,9 @@ const createWindow = () => {
     webPreferences: {
       nodeIntegration: true
     },
-    height: 600,
-    width: 800
+    height: 960,
+    width: 540,
+    frame: false
   });
 
   const startUrl =

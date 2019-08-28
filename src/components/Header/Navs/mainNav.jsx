@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
         justifyContent:"center"
     },
     card: {
-      width: 170,
+      width: 175,
       height: 150,
       maxWidth: 1980,
       background: '#0D6D79'

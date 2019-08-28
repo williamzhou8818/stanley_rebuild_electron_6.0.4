@@ -4,7 +4,7 @@
 // next link show up the time and date
 
 import React  from 'react';
-
+import { Link } from "react-router-dom";
 
 import './SubNav.scss';
 
@@ -47,12 +47,15 @@ const SubNavs  = () => {
 
         
         <Grid item xs={6}>
-          <Paper className={classes.paperLeft}>
-          <img src="./imgs/SearchIcon.png" alt='' /> 
-            <p>ABOUT OUR HOTEL</p>
-               
-            
-          </Paper>
+          <Link to="/" style={{ textDecoration: 'none' }}> 
+            <Paper className={classes.paperLeft}>
+      
+              <img src="./imgs/SearchIcon.png" alt='' /> 
+                <p>ABOUT OUR HOTEL</p>
+                
+              
+            </Paper>
+          </Link>
         </Grid>
         <Grid item xs={6}>
           <Paper className={classes.paperRight}>

@@ -1,12 +1,9 @@
 import React from 'react';
 
-const  OurHotel = () => {
-
-    return (
+const  OurHotel = () =>  (
         <div>
-            <p>Our Hotel</p> 
+            <h1>Our Hotel</h1> 
         </div>
-    )
-}
+    );
 
 export default  OurHotel;
