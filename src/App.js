@@ -5,8 +5,9 @@ import MainLogo from './components/Header/MainLogo/MainLogo';
 import SubNavs from './components/Header/Navs/SubNav';
 import MainNav from './components/Header/Navs/mainNav';
 
-import OurHotel from './components/MainContents/OurHotel/OurHotel';
+import AboutOurHotel from './components/MainContents/AboutOurHotel/AboutOurHotel';
 import Maps from './components/MainContents/Maps/Maps';
+import OurHotel from './components/MainContents/OurHotel/OurHotel';
 
 import Footer from './components/Footer/Footer';
 
@@ -27,8 +28,12 @@ function App() {
       <main>
           <Switch>
 
-            <Route exact  path='/' component={OurHotel} />
-            <Route exact  path='/maps' component={Maps} />
+            <Route exact  path='/' component={AboutOurHotel} />
+            <Route exact path='/ourhotel' component={OurHotel} />
+            <Route  path='/ourhotel/:name' component={OurHotel} />
+            <Route exact path='/maps' component={Maps} />
+            <Route    path='/maps/:id' component={Maps} />
+
 
           </Switch>
       </main>
